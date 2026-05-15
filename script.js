@@ -10,12 +10,19 @@
     });
   });
 
-  var toggle = document.querySelector('.navbar-toggle');
-  var collapse = document.getElementById('bs-example-navbar-collapse-1');
-  if (toggle && collapse) {
+  var toggle = document.querySelector('.nav-toggle');
+  var navLinks = document.getElementById('nav-links');
+  if (toggle && navLinks) {
     toggle.addEventListener('click', function () {
-      collapse.classList.toggle('in');
-      toggle.classList.toggle('collapsed');
+      var isOpen = navLinks.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+
+    navLinks.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        navLinks.classList.remove('is-open');
+        toggle.setAttribute('aria-expanded', 'false');
+      });
     });
   }
 

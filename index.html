@@ -5,10 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css"
     />
     <link
@@ -22,27 +18,25 @@
       content="Website for Progessay Impact Coding Club"
     />
   </head>
-  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-<nav id="menu" class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button
-            type="button"
-            class="navbar-toggle collapsed"
-            aria-expanded="false"
-          >
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand page-scroll" href="#page-top">
-            Progessay Impact Coding Club
-          </a>
-        </div>
-
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
+  <body id="page-top">
+    <nav id="menu" class="site-nav">
+      <div class="container nav-inner">
+        <a class="nav-brand page-scroll" href="#page-top">
+          Progessay Impact Coding Club
+        </a>
+        <button
+          type="button"
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="nav-links"
+        >
+          <span class="visually-hidden">Toggle navigation</span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+        <div id="nav-links" class="nav-links">
+          <ul class="nav-list">
             <li><a href="#features" class="page-scroll">Features</a></li>
             <li><a href="#about" class="page-scroll">About</a></li>
             <li><a href="#services" class="page-scroll">Services</a></li>
@@ -60,7 +54,7 @@
         <div class="overlay">
           <div class="container">
             <div class="row">
-              <div class="col-md-8 col-md-offset-2 intro-text">
+              <div class="col-8 col-center intro-text">
                 <h1>Progessay Impact Coding Club<span></span></h1>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
@@ -79,11 +73,11 @@
 
     <div id="features" class="text-center">
       <div class="container">
-        <div class="col-md-10 col-md-offset-1 section-title">
+        <div class="col-10 col-center section-title">
           <h2>Features</h2>
         </div>
         <div class="row">
-          <div class="col-xs-6 col-md-3">
+          <div class="col-3">
             <i class="fa fa-comments-o"></i>
             <h3>Lorem ipsum</h3>
             <p>
@@ -91,7 +85,7 @@
               eleifend pellentesque natoque etiam.
             </p>
           </div>
-          <div class="col-xs-6 col-md-3">
+          <div class="col-3">
             <i class="fa fa-bullhorn"></i>
             <h3>Lorem ipsum</h3>
             <p>
@@ -99,7 +93,7 @@
               eleifend pellentesque natoque etiam.
             </p>
           </div>
-          <div class="col-xs-6 col-md-3">
+          <div class="col-3">
             <i class="fa fa-group"></i>
             <h3>Lorem ipsum</h3>
             <p>
@@ -107,7 +101,7 @@
               eleifend pellentesque natoque etiam.
             </p>
           </div>
-          <div class="col-xs-6 col-md-3">
+          <div class="col-3">
             <i class="fa fa-magic"></i>
             <h3>Lorem ipsum</h3>
             <p>
@@ -122,10 +116,10 @@
     <div id="about">
       <div class="container">
         <div class="row">
-          <div class="col-xs-12 col-md-6">
-            <img src="img/about.jpg" class="img-responsive" alt="" />
+          <div class="col-6">
+            <img src="img/about.jpg" class="img-fluid" alt="" />
           </div>
-          <div class="col-xs-12 col-md-6">
+          <div class="col-6">
             <div class="about-text">
               <h2>About Us</h2>
               <p>
@@ -138,7 +132,7 @@
               </p>
               <h3>Why Choose Us?</h3>
               <div class="list-style">
-                <div class="col-lg-6 col-sm-6 col-xs-12">
+                <div class="col-6">
                   <ul>
                     <li>Lorem ipsum dolor</li>
                     <li>Tempor incididunt</li>
@@ -146,7 +140,7 @@
                     <li>Incididunt ut labore</li>
                   </ul>
                 </div>
-                <div class="col-lg-6 col-sm-6 col-xs-12">
+                <div class="col-6">
                   <ul>
                     <li>Aliquip ex ea commodo</li>
                     <li>Lorem ipsum dolor</li>
@@ -171,7 +165,7 @@
           </p>
         </div>
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-4">
             <i class="fa fa-wordpress"></i>
             <div class="service-desc">
               <h3>Lorem ipsum dolor</h3>
@@ -182,7 +176,7 @@
               </p>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-4">
             <i class="fa fa-cart-arrow-down"></i>
             <div class="service-desc">
               <h3>Consectetur adipiscing</h3>
@@ -193,7 +187,7 @@
               </p>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-4">
             <i class="fa fa-cloud-download"></i>
             <div class="service-desc">
               <h3>Lorem ipsum dolor</h3>
@@ -204,7 +198,7 @@
               </p>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-4">
             <i class="fa fa-language"></i>
             <div class="service-desc">
               <h3>Consectetur adipiscing</h3>
@@ -215,7 +209,7 @@
               </p>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-4">
             <i class="fa fa-plane"></i>
             <div class="service-desc">
               <h3>Lorem ipsum dolor</h3>
@@ -226,7 +220,7 @@
               </p>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-4">
             <i class="fa fa-pie-chart"></i>
             <div class="service-desc">
               <h3>Consectetur adipiscing</h3>
@@ -252,7 +246,7 @@
         </div>
         <div class="row">
           <div class="portfolio-items">
-            <div class="col-sm-6 col-md-4 col-lg-4">
+            <div class="col-4">
               <div class="portfolio-item">
                 <div class="hover-bg">
                   <a
@@ -265,14 +259,14 @@
                     </div>
                     <img
                       src="img/portfolio/01-small.jpg"
-                      class="img-responsive"
+                      class="img-fluid"
                       alt="Project Title"
                     />
                   </a>
                 </div>
               </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-4">
+            <div class="col-4">
               <div class="portfolio-item">
                 <div class="hover-bg">
                   <a
@@ -285,14 +279,14 @@
                     </div>
                     <img
                       src="img/portfolio/02-small.jpg"
-                      class="img-responsive"
+                      class="img-fluid"
                       alt="Project Title"
                     />
                   </a>
                 </div>
               </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-4">
+            <div class="col-4">
               <div class="portfolio-item">
                 <div class="hover-bg">
                   <a
@@ -305,14 +299,14 @@
                     </div>
                     <img
                       src="img/portfolio/03-small.jpg"
-                      class="img-responsive"
+                      class="img-fluid"
                       alt="Project Title"
                     />
                   </a>
                 </div>
               </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-4">
+            <div class="col-4">
               <div class="portfolio-item">
                 <div class="hover-bg">
                   <a
@@ -325,14 +319,14 @@
                     </div>
                     <img
                       src="img/portfolio/04-small.jpg"
-                      class="img-responsive"
+                      class="img-fluid"
                       alt="Project Title"
                     />
                   </a>
                 </div>
               </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-4">
+            <div class="col-4">
               <div class="portfolio-item">
                 <div class="hover-bg">
                   <a
@@ -345,14 +339,14 @@
                     </div>
                     <img
                       src="img/portfolio/05-small.jpg"
-                      class="img-responsive"
+                      class="img-fluid"
                       alt="Project Title"
                     />
                   </a>
                 </div>
               </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-4">
+            <div class="col-4">
               <div class="portfolio-item">
                 <div class="hover-bg">
                   <a
@@ -365,14 +359,14 @@
                     </div>
                     <img
                       src="img/portfolio/06-small.jpg"
-                      class="img-responsive"
+                      class="img-fluid"
                       alt="Project Title"
                     />
                   </a>
                 </div>
               </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-4">
+            <div class="col-4">
               <div class="portfolio-item">
                 <div class="hover-bg">
                   <a
@@ -385,14 +379,14 @@
                     </div>
                     <img
                       src="img/portfolio/07-small.jpg"
-                      class="img-responsive"
+                      class="img-fluid"
                       alt="Project Title"
                     />
                   </a>
                 </div>
               </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-4">
+            <div class="col-4">
               <div class="portfolio-item">
                 <div class="hover-bg">
                   <a
@@ -405,14 +399,14 @@
                     </div>
                     <img
                       src="img/portfolio/08-small.jpg"
-                      class="img-responsive"
+                      class="img-fluid"
                       alt="Project Title"
                     />
                   </a>
                 </div>
               </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-4">
+            <div class="col-4">
               <div class="portfolio-item">
                 <div class="hover-bg">
                   <a
@@ -425,7 +419,7 @@
                     </div>
                     <img
                       src="img/portfolio/09-small.jpg"
-                      class="img-responsive"
+                      class="img-fluid"
                       alt="Project Title"
                     />
                   </a>
@@ -443,7 +437,7 @@
           <h2>What our clients say</h2>
         </div>
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-4">
             <div class="testimonial">
               <div class="testimonial-image">
                 <img src="img/testimonials/01.jpg" alt="" />
@@ -458,7 +452,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-4">
             <div class="testimonial">
               <div class="testimonial-image">
                 <img src="img/testimonials/02.jpg" alt="" />
@@ -473,7 +467,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-4">
             <div class="testimonial">
               <div class="testimonial-image">
                 <img src="img/testimonials/03.jpg" alt="" />
@@ -488,7 +482,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-4">
             <div class="testimonial">
               <div class="testimonial-image">
                 <img src="img/testimonials/04.jpg" alt="" />
@@ -503,7 +497,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-4">
             <div class="testimonial">
               <div class="testimonial-image">
                 <img src="img/testimonials/05.jpg" alt="" />
@@ -518,7 +512,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-4">
             <div class="testimonial">
               <div class="testimonial-image">
                 <img src="img/testimonials/06.jpg" alt="" />
@@ -539,45 +533,45 @@
 
     <div id="team" class="text-center">
       <div class="container">
-        <div class="col-md-8 col-md-offset-2 section-title">
+        <div class="col-8 col-center section-title">
           <h2>Meet the Team</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
             dapibus leonec.
           </p>
         </div>
-        <div id="row">
-          <div class="col-md-3 col-sm-6 team">
-            <div class="thumbnail">
+        <div class="row">
+          <div class="col-3 team">
+            <div class="team-card">
               <img src="img/team/01.jpg" alt="John Doe" class="team-img" />
-              <div class="caption">
+              <div class="team-caption">
                 <h4>John Doe</h4>
                 <p>Director</p>
               </div>
             </div>
           </div>
-          <div class="col-md-3 col-sm-6 team">
-            <div class="thumbnail">
+          <div class="col-3 team">
+            <div class="team-card">
               <img src="img/team/02.jpg" alt="Mike Doe" class="team-img" />
-              <div class="caption">
+              <div class="team-caption">
                 <h4>Mike Doe</h4>
                 <p>Senior Designer</p>
               </div>
             </div>
           </div>
-          <div class="col-md-3 col-sm-6 team">
-            <div class="thumbnail">
+          <div class="col-3 team">
+            <div class="team-card">
               <img src="img/team/03.jpg" alt="Jane Doe" class="team-img" />
-              <div class="caption">
+              <div class="team-caption">
                 <h4>Jane Doe</h4>
                 <p>Senior Designer</p>
               </div>
             </div>
           </div>
-          <div class="col-md-3 col-sm-6 team">
-            <div class="thumbnail">
+          <div class="col-3 team">
+            <div class="team-card">
               <img src="img/team/04.jpg" alt="Karen Doe" class="team-img" />
-              <div class="caption">
+              <div class="team-caption">
                 <h4>Karen Doe</h4>
                 <p>Project Manager</p>
               </div>
@@ -590,7 +584,7 @@
     <div>
       <div id="contact">
         <div class="container">
-          <div class="col-md-8">
+          <div class="col-8">
             <div class="row">
               <div class="section-title">
                 <h2>Get In Touch</h2>
@@ -601,30 +595,30 @@
               </div>
               <form name="sentMessage" novalidate>
                 <div class="row">
-                  <div class="col-md-6">
+                  <div class="col-6">
                     <div class="form-group">
                       <input
                         type="text"
                         id="name"
                         name="name"
-                        class="form-control"
+                        class="field"
                         placeholder="Name"
                         required
                       />
-                      <p class="help-block text-danger"></p>
+                      <p class="field-error"></p>
                     </div>
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-6">
                     <div class="form-group">
                       <input
                         type="email"
                         id="email"
                         name="email"
-                        class="form-control"
+                        class="field"
                         placeholder="Email"
                         required
                       />
-                      <p class="help-block text-danger"></p>
+                      <p class="field-error"></p>
                     </div>
                   </div>
                 </div>
@@ -632,12 +626,12 @@
                   <textarea
                     name="message"
                     id="message"
-                    class="form-control"
+                    class="field"
                     rows="4"
                     placeholder="Message"
                     required
                   ></textarea>
-                  <p class="help-block text-danger"></p>
+                  <p class="field-error"></p>
                 </div>
                 <div id="success"></div>
                 <button type="submit" class="btn btn-custom btn-lg">
@@ -646,7 +640,7 @@
               </form>
             </div>
           </div>
-          <div class="col-md-3 col-md-offset-1 contact-info">
+          <div class="col-3 col-offset-1 contact-info">
             <div class="contact-item">
               <h3>Contact Info</h3>
               <p>
@@ -667,7 +661,7 @@
               </p>
             </div>
           </div>
-          <div class="col-md-12">
+          <div class="col-12">
             <div class="row">
               <div class="social">
                 <ul>

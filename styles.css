@@ -543,7 +543,7 @@ header .intro-text {
   color: #fff;
 }
 #services p {
-  color: rgba(255, 255, 255, 0.75);
+  color: #666;
 }
 #services .service-desc {
   margin-bottom: 40px;
@@ -639,6 +639,7 @@ header .intro-text {
 .testimonial-content p {
   margin-bottom: 0;
   font-size: 14px;
+  color: #666;
   font-style: italic;
 }
 .testimonial-meta {
